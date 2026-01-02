@@ -1,0 +1,25 @@
+{
+    "manifest_version": 3,
+    "name": "LinkedIn Auto Connect Free Forever",
+    "version": "1.1.3",
+    "description": "Automatically send connection requests on LinkedIn. Built by user, for users. Author: @thuthuynt",
+    "permissions": [
+      "activeTab",
+      "scripting"
+    ],
+    "content_scripts": [
+      {
+        "matches": ["*://*.linkedin.com/*"],
+        "js": ["content.js"]
+      }
+    ],
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": "icon.png"
+    },
+    "icons": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    }
+  }
